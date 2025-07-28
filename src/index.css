@@ -8,3 +8,7 @@ body{
     /*this is the background of the website */
     @apply bg-black;
 }
+
+html, body {
+  overflow-x: hidden;
+}

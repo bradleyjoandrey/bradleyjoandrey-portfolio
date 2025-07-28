@@ -43,17 +43,28 @@ Thumbs.db
 coverage/
 *.lcov
 
-# GitHub Pages deployment (ADD THIS)
+# GitHub Pages deployment
 .gh-pages/
 
-# ESLint cache (ADD THIS)
+# ESLint cache
 .eslintcache
 
-# Vite cache (ADD THIS)
+# Prettier cache
+.prettiercache
+
+# Vite cache
 .vite/
 
-# TypeScript (if you ever add TS)
+# TypeScript
 *.tsbuildinfo
 
-# Other
+# Visual Studio project files
+.vs/
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+
+# Backup & archives
 *.zip
+*.tar.gz
+*.rar

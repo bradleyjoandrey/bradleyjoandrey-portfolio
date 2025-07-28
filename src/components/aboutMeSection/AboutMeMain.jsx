@@ -1,9 +1,11 @@
 import React from 'react'
 import AboutMeText from './AboutMeText'
-import AboutMeImage from './AboutMeImage'
 import { motion } from 'framer-motion';
 import { fadeIn } from '../../framerMotion/variants';
 
+// This component serves as the main container for the "About Me" section.
+// It arranges the text and any future content on larger screens
+// and stacks them vertically on smaller screens using Tailwind CSS responsive classes.
 
 const AboutMeMain = () => {
     return (
@@ -11,7 +13,7 @@ const AboutMeMain = () => {
             <motion.div variants={fadeIn('right', 0.2)} initial='hidden' whileInView='show' viewport={{ once: false, amount: 0.5 }}>
                 <AboutMeText />
             </motion.div>
-            <AboutMeImage />
+            
 
         </div>
     )
