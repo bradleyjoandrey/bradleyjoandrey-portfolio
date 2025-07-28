@@ -12,7 +12,7 @@ const SubHeroSection = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentTraitIndex((prevIndex) => (prevIndex + 1) % traits.length);
-    }, 4000); // change and cycle each text every 4 seconds
+    }, 4000);
 
     return () => clearInterval(interval);
   }, [traits.length]);
