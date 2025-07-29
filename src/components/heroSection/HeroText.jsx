@@ -53,7 +53,7 @@ const HeroText = () => {
         viewport={{ once: false, amount: 0 }}
         className="lg:text-2xl sm:text-xl uppercase text-cyan"
       >
-        SMU Information Systems Undegraduate
+        SMU Information Systems Undergraduate
       </motion.h2>
       <motion.h1
         variants={fadeIn("right", 0.4)}
