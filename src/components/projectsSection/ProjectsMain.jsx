@@ -12,22 +12,19 @@ const projects = [
     name: "PSPL VBA Process Automation",
     year: "2021-2022",
     align: "right",
-    image: `${import.meta.env.BASE_URL}images/project_img_1.png`,
-    link: "https://www.youtube.com",
+    image: `${import.meta.env.BASE_URL}images/project_1.gif`,
   },
   {
     name: "TradeX",
     year: "2020",
     align: "left",
-    image: `${import.meta.env.BASE_URL}images/project_img_2.png`,
-    link: "https://www.youtube.com",
+    image: `${import.meta.env.BASE_URL}images/project_2.gif`,
   },
   {
     name: "WantEatWhere",
     year: "2019",
     align: "right",
-    image: `${import.meta.env.BASE_URL}images/project_img_3.png`,
-    link: "https://www.youtube.com",
+    image: `${import.meta.env.BASE_URL}images/project_3.gif`,
   },
 ];
 
@@ -52,7 +49,6 @@ const ProjectsMain = () => {
               year={item.year}
               align={item.align}
               image={item.image}
-              link={item.link}
             />
           );
         })}

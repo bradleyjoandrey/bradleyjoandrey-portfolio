@@ -1,13 +1,12 @@
 import React from "react";
-import { HiArrowTopRightOnSquare } from "react-icons/hi2";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../framerMotion/variants";
 import PropTypes from "prop-types";
 
-// Displays a single project with the image, title, year, and link.
+// Displays a single project with the image, title, and year.
 // The 'align' prop controls whether each single project appears on the left or right on larger screen.
 
-const SingleProject = ({ name, year, align, image, link }) => {
+const SingleProject = ({ name, year, align, image }) => {
   return (
     <motion.div
       variants={fadeIn(align, 0.2)}
@@ -23,14 +22,6 @@ const SingleProject = ({ name, year, align, image, link }) => {
         <h2 className="text-xl font-light text-gray-400 font-special sm:text-center">
           {year}
         </h2>
-        <a
-          href={link}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-lg flex gap-2 items-center sm:justify-center md:justify-start text-lightCyan hover:text-blue-800 transition-all duration-500 cursor-pointer"
-        >
-          View <HiArrowTopRightOnSquare />
-        </a>
       </div>
       <div className="max-h-[220px] max-w-[400px] overflow-hidden hover:scale-110 transform transition-all duration-500 relative border border-white">
         <img src={image} alt="Project Image" className="w-full h-full" />
@@ -44,7 +35,6 @@ SingleProject.propTypes = {
   year: PropTypes.string.isRequired,
   align: PropTypes.oneOf(["left", "right"]).isRequired,
   image: PropTypes.string.isRequired,
-  link: PropTypes.string.isRequired,
 };
 
 export default SingleProject;
