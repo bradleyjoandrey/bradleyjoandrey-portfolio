@@ -19,10 +19,14 @@ const experiences = [
     ],
   },
   {
-    job: "...",
-    company: "",
-    date: "",
-    responsibilities: [],
+    job: "Business Analyst Intern",
+    company: "Blue Ocean Technology JSC",
+    date: "Dec 2025 - Jan 2026",
+    responsibilities: [
+      "Built a Vocabulary Flashcard CMS integrated with n8n automation and Firebase storage to support AI-assisted document processing",
+      "Implemented an automated weekly newsletter workflow incorporating AI-assisted content rewriting and WordPress publishing",
+      "Produced technical documentation, handover notes, and supporting materials for internal knowledge transfer",
+    ],
   },
   {
     job: "...",

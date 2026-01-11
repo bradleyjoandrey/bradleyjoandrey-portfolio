@@ -6,6 +6,7 @@ import { SiMysql } from "react-icons/si";
 import { VscTerminalBash } from "react-icons/vsc";
 import { FaCss3Alt } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
+import { SiN8N } from "react-icons/si";
 import SingleSkill from "./SingleSkill";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../framerMotion/variants";
@@ -42,6 +43,10 @@ const skills = [
   {
     skill: "Bash Commands",
     icon: VscTerminalBash,
+  },
+  {
+    skill: "n8n",
+    icon: SiN8N,
   },
 ];
 
